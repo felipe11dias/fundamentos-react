@@ -10,6 +10,10 @@ import Card from "./components/layout/Card";
 import './App.css'
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import Repeticao from "./components/repeticoes/ListaAlunos";
+import DesafioReticao from "./components/repeticoes/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 export default () => {
   return (
@@ -17,6 +21,19 @@ export default () => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#08 - Renderização Condicional" color="#982395">
+          <ParOuImpar numero={20} />
+          <UsuarioInfo usuario={{nome: 'Fernando'}} />
+        </Card>
+        
+        <Card titulo="#07 - Desafio Repetição" color="#CCCCFF">
+          <DesafioReticao />
+        </Card>
+        
+        <Card titulo="#06 - Repetição" color="#6495ED">
+          <Repeticao />
+        </Card>
+
         <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
           <Familia sobrenome="Dias">
             <FamiliaMembro nome="Felipe" />
