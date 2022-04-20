@@ -1,6 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-
 export default props => {
     const elseChild = props.children.filter(child => {
         return child.type && child.type.name === 'Else'
